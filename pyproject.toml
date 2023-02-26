@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pythonfaster"
+version = "0.1.0"
+description = ""
+authors = ["SooTher99 <tolikberdyev@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+cython = "^0.29.33"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
