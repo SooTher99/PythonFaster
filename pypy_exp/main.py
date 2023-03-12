@@ -1,7 +1,8 @@
 from random import shuffle
+from timeit import Timer
 
 
-def insertion_sort(alist):
+def insertion_sort(alist: list):
     for i in range(1, len(alist)):
         temp = alist[i]
         j = i - 1
@@ -12,6 +13,8 @@ def insertion_sort(alist):
 
 
 if __name__ == '__main__':
-    random_list_of_nums = list(range(0, 10000))
-    shuffle(random_list_of_nums)
-    insertion_sort(random_list_of_nums)
+    setup = """
+random_list_of_nums = list(range(0, 10_000))
+shuffle(random_list_of_nums)"""
+
+    print(min(Timer('insertion_sort(random_list_of_nums)', setup=setup, globals=globals()).repeat(20, 1000)))

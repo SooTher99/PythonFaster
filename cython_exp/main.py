@@ -8,7 +8,7 @@ pyximport.install(reload_support=True, build_dir=os.path.join(os.getcwd(), '.pyx
 import insertion_sort
 
 if __name__ == "__main__":
-    random_list_of_nums = list(range(0, 10000))
+    random_list_of_nums = list(range(0, 10_000))
     shuffle(random_list_of_nums)
 
     print(timeit('insertion_sort.insertion_sort(random_list_of_nums)', globals=globals(), number=1))

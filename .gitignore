@@ -5,6 +5,7 @@
 *.pyxbld
 
 build
+pypy-venv
 *.c
 *.so
 *.html

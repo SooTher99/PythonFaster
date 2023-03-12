@@ -23,11 +23,11 @@ def get_shuffled_array(amount: int) -> np.ndarray:
 
 if __name__ == '__main__':
     setup = """
-random_list_of_nums = np.arange(0, 100_000, dtype=np.int16)
+random_list_of_nums = np.arange(0, 10_000, dtype=np.int16)
 np.random.shuffle(random_list_of_nums)
 """
     setup2 = """
-random_list_of_nums = get_shuffled_array(100_000)
+random_list_of_nums = get_shuffled_array(10_000)
 """
 
     print(min(Timer('insertion_sort(random_list_of_nums)', setup=setup, globals=globals()).repeat(7, 1000)))
