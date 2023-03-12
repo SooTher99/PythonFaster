@@ -3,6 +3,12 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 *.pyxbld
+
+build
+*.c
+*.so
+*.html
+
 .idea
 
 # User-specific stuff
