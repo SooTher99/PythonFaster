@@ -8,6 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 cython = "^0.29.33"
+numba = "^0.56.4"
 
 
 [build-system]
